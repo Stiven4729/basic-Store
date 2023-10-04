@@ -3,7 +3,7 @@ export interface Product {
   name: string;
   price: number;
   description: string;
-  photo: any;
+  photo: string;
 }
 
 export const products = [
@@ -25,7 +25,8 @@ export const products = [
     id: 3,
     name: 'Pixel 4a',
     price: 500,
-    description: 'https://th.bing.com/th/id/OIP.KmiHwtjaNJSapBTAO5p9mgHaMx?pid=ImgDet&rs=1'
+    description: '',
+    photo: 'https://th.bing.com/th/id/OIP.KmiHwtjaNJSapBTAO5p9mgHaMx?pid=ImgDet&rs=1'
   },
   {
     id: 4,

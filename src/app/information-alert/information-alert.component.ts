@@ -9,28 +9,26 @@ import Swal from 'sweetalert2'
   styleUrls: ['./information-alert.component.css']
 })
 export class InformationAlertComponent implements OnInit {
-  products = [...products];
-  productss: Product | undefined;
+  product: Product | undefined;
 
   constructor(private route: ActivatedRoute){}
 
   ngOnInit(){
     const routerParams = this.route.snapshot.paramMap;
     const productIdFromRoute = Number(routerParams.get('productId'))
-
-   // this.product = products.find(product => product.id === productIdFromRoute)
+    this.product = products.find(product => product.id === productIdFromRoute)
 
   }
 
-  information(nombre: string, foto: any, precio: number, descripcion: string){
+  information(){
 
     Swal.fire({
-      title: nombre,
-      imageUrl: foto,
+      title: this.product?.name,
+      imageUrl: this.product?.photo,
       imageWidth: 150,
       imageHeight: 200,
-      footer: precio,  
-      text: descripcion,
+      footer: this.product?.price,  
+      text: this.product?.description,
     })
     
   }

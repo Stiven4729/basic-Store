@@ -19,10 +19,15 @@
     </button>
 
     <app-product-alerts
+
+     [product]="product"
      (notify)="onNotify()" >
+
     </app-product-alerts>
-    <app-information-alert>
-    
+    <app-information-alert 
+        [routerLink]=" [ '/products', product.id] "
+    > 
+
     </app-information-alert>
     
 </div>
