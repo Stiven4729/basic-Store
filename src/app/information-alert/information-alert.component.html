@@ -1,3 +1,28 @@
-<button  type="button" (click)="information()">
-    information
-</button>
+<div class="containerTool" *ngIf="product">
+    <h1 class="title">
+        <a [title]="product.name+ 'detalles'">
+            {{ product.name}}
+        </a>
+    </h1>
+    <div class="containerInformation">
+        <img [src]="product.photo">
+        <div>
+            <p class="description" *ngIf="product.description">
+                Descripción: {{product.description}}
+            </p>
+            <button type="button" class="buttonsee" (click)="information()">
+                see closely
+            </button>
+        </div>
+    </div>
+    <div class="containerbuy">
+        <p class="priceinfo">
+            Precio: {{ product.price | currency}}
+        </p>
+      <div class="buttonbuy">
+          <button class="buttonbuy" (click)="addToCart(product)">buy</button>
+      </div>
+    </div>
+    
+    
+</div>

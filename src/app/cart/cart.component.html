@@ -1,1 +1,12 @@
-<p>cart works!</p>
+<h1>Get Products</h1>
+
+<div class="cart-item" *ngFor="let item of items">
+    <span> {{ item.name }}</span>
+    <span> {{ item.price }}</span>
+    <button  mat-mini-fab matTooltip="Primary" color="accent" (click)="deleteItem(item)">
+        <mat-icon>delete</mat-icon>
+    </button>
+    <button [routerLink]="['/shipping']">
+        costo
+    </button>
+</div>  

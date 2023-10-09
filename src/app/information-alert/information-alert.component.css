@@ -1,0 +1,87 @@
+.containerTool{
+    padding-top: 3em;
+}
+
+img {
+    height: 50%;
+    width: 50%;
+}
+
+
+.containerInformation{
+    display: flex;
+    padding-top: 2em;
+    align-items: center;
+}
+
+.buttonsee{
+    width: 100%;
+}
+
+.buttonbuy{
+    background-color: black;
+    color: azure;
+    border-radius: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.containerbuy{
+    padding-top: 2em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 10em;
+}
+
+@media (width >= 877px){
+
+    .title{
+        font-size: 50px;
+    }
+        
+    .buttonsee{
+        font-size: 20px;
+    }
+
+    .description{
+        font-size: 20px;
+    }
+
+    .priceinfo{
+        font-size: 20px;
+    }
+    
+    .buttonbuy{
+        font-size: 20px;
+        background-color: black;
+        color: azure;
+        border-radius: 1em;
+        width: 100%;
+        text-align: center;
+    }   
+}
+
+@media (width >= 877px){
+        
+    .buttonsee{
+        font-size: 40px;
+    }
+
+    .description{
+        font-size: 25px;
+    }
+
+    .priceinfo{
+        font-size: 40px;
+    }
+    
+    .buttonbuy{
+        font-size: 40px;
+        background-color: black;
+        color: azure;
+        border-radius: 1em;
+        width: 100%;
+        text-align: center;
+    }   
+}

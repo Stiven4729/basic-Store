@@ -1,7 +1,20 @@
+.btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
+.btnNotify{
+    display: flex;
+    justify-content: flex-start;
+    align-items: stretch;
+    flex-direction: column;
+}
 
-/*
-Copyright Google LLC. All Rights Reserved.
-Use of this source code is governed by an MIT-style license that
-can be found in the LICENSE file at https://angular.io/license
-*/
+.btnShared {
+    width: 30%;
+}
+
+.btnInformation {
+    width: 30%;
+}
